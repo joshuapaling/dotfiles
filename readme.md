@@ -2,4 +2,5 @@ Inspired by https://dotfiles.github.io/ and https://medium.com/@webprolific/gett
 
 All these files are symlinked, eg:
 
-ln -s /Users/joshuapaling/dev/PERSONAL_PROJECTS/dotfiles/.promt ~/.prompt
+ln -s /Users/joshuapaling/dev/PERSONAL_PROJECTS/dotfiles/.prompt ~/.prompt
+ln -s /Users/joshuapaling/dev/PERSONAL_PROJECTS/dotfiles/.aliases ~/.aliases

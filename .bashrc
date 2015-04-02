@@ -6,10 +6,6 @@ for file in ~/.{path,prompt,exports,aliases,functions,extra}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
-# source ~/.prompt
-
-# NOTE: .bashrc is also imported into .bash_profile based
-# on instructions at http://www.joshstaiger.org/archives/2005/07/bash_profile_vs.html
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
