@@ -1,0 +1,19 @@
+[user]
+	name = Joshua Paling
+	email = joshua.paling@gmail.com
+[color]
+	ui = true
+	ui = true
+[mergetool]
+	keepBackup = true
+[core]
+	excludesfile = /Users/joshuapaling/.gitignore_global
+	editor = subl -n -w
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[push]
+	default = matching
