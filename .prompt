@@ -36,7 +36,7 @@ txtrst='\e[0m'    # Text Reset
 function print_before_the_prompt () {
 	printf "\n\n"
 	printf "  $txtylw=$txtblu=$txtylw=$txtblu=$txtylw=$txtblu=$txtylw=$txtblu=$txtylw=$txtblu=$txtylw=$txtblu=$txtylw=$txtblu= "
-	printf "$txtred  $txtylw%s$txtred%s$txtgrn%s$txtblu%s$txtpur%s$txtwhite%s$txtcyn%s$txtblu%s$txtylw%s$txtred%s$txtred  " "L" "E" "T" "'" "S" " " "H" "A" "C" "K"
+	printf "$txtred  $txtylw%s$txtred%s$txtgrn%s$txtblu%s$txtpur%s$txtwhite%s$txtcyn%s$txtblu%s$txtylw%s$txtred%s$txtblu%s$txtgrn  " "H" "E" "L" "L" "O" " " "W" "O" "R" "L" "D"
 	printf "  $txtylw=$txtblu=$txtylw=$txtblu=$txtylw=$txtblu=$txtylw=$txtblu=$txtylw=$txtblu=$txtylw=$txtblu=$txtylw=$txtblu=  "
 
 	printf "\n $txtblu%s: $bldgrn%s $txtpur%s$txtrst\n" "$USER" "$(get_pwd)"

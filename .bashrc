@@ -15,8 +15,8 @@ export PATH=/usr/local/bin:$PATH
 # export PATH=./bin:$PATH # so we can use bundle --binstubs # DELETE THIS IF NOTHING STUFFS UP
 
 # Find MAMP's version of PHP before the system version
-export PATH=/Applications/MAMP/bin/php/php5.6.2/bin:$PATH
-# export PATH=/Applications/MAMP/bin/php/php5.4.26/bin:$PATH
+# export PATH=/Applications/MAMP/bin/php/php5.6.10/bin:$PATH
+export PATH=/Applications/MAMP/bin/php/php5.4.42/bin:$PATH
 
 eval "$(rbenv init -)" # required for rbenv - https://github.com/sstephenson/rbenv#homebrew-on-mac-os-x
 
