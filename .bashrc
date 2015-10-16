@@ -22,7 +22,9 @@ eval "$(rbenv init -)" # required for rbenv - https://github.com/sstephenson/rbe
 
 export PGHOST=localhost
 
-export EDITOR=subl
+# Specifying -w will cause the subl command to not exit until the file is closed. - https://www.sublimetext.com/docs/2/osx_command_line.html
+# This is needed because: http://stackoverflow.com/questions/33148753/ansible-vault-doesnt-save-changes-with-sublime-text
+export EDITOR='subl -w'
 
 # for https://github.com/zimbatm/direnv#the-stdlib, so we don't have to prefix
 # all commands with bin when using spring - https://github.com/rails/spring
