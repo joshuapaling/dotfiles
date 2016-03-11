@@ -10,3 +10,5 @@ alias mphp54='/Applications/MAMP/bin/php/php5.4.26/bin/php'
 alias be='bundle exec'
 alias bi='bundle install --binstubs'
 alias hosts='subl /private/etc/hosts'
+alias dotfiles='subl /Users/joshuapaling/dev/PERSONAL_PROJECTS/dotfiles/'
+alias j='fc -s' # re-run the last command (eg last test suite)
