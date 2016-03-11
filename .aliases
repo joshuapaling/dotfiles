@@ -2,7 +2,7 @@
 alias htdocs='cd /Applications/MAMP/htdocs/'
 alias bashrc='subl ~/.bashrc'
 alias dev='cd ~/dev'
-alias bbl='cd ~/dev/BBL'
+alias bbl='cd ~/dev/bbl_work'
 alias blog='cd ~/dev/PERSONAL_PROJECTS/joshuapaling_blog_2015 && atom .'
 alias mphp56='/Applications/MAMP/bin/php/php5.6.2/bin/php'
 alias mphp55='/Applications/MAMP/bin/php/php5.5.10/bin/php'
@@ -12,3 +12,4 @@ alias bi='bundle install --binstubs'
 alias hosts='subl /private/etc/hosts'
 alias dotfiles='subl /Users/joshuapaling/dev/PERSONAL_PROJECTS/dotfiles/'
 alias j='fc -s' # re-run the last command (eg last test suite)
+alias rpsec='rspec' # I always make that typo!
