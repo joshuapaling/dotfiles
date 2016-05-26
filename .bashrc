@@ -12,11 +12,12 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 export PATH=$PATH:/usr/local/git/bin
 export PATH=/usr/local/bin:$PATH
+export PATH=~/.composer/vendor/bin:$PATH
 # export PATH=./bin:$PATH # so we can use bundle --binstubs # DELETE THIS IF NOTHING STUFFS UP
 
 # Find MAMP's version of PHP before the system version
-# export PATH=/Applications/MAMP/bin/php/php5.6.10/bin:$PATH
-export PATH=/Applications/MAMP/bin/php/php5.4.42/bin:$PATH
+export PATH=/Applications/MAMP/bin/php/php5.6.10/bin:$PATH
+# export PATH=/Applications/MAMP/bin/php/php5.4.42/bin:$PATH
 
 eval "$(rbenv init -)" # required for rbenv - https://github.com/sstephenson/rbenv#homebrew-on-mac-os-x
 
