@@ -13,3 +13,9 @@ alias hosts='subl /private/etc/hosts'
 alias dotfiles='subl /Users/joshuapaling/dev/PERSONAL_PROJECTS/dotfiles/'
 alias j='fc -s' # re-run the last command (eg last test suite)
 alias rpsec='rspec' # I always make that typo!
+
+# Docker shortcuts
+alias dockerc="docker-compose"
+alias dockerm="docker-machine"
+alias dockerr="docker-compose down && docker-compose up -d && docker-compose ps && docker-compose logs -f"
+alias dockercb="docker-compose build --no-cache"
