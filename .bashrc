@@ -12,7 +12,8 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 export PATH=$PATH:/usr/local/git/bin
 export PATH=/usr/local/bin:$PATH
-export PATH=~/.composer/vendor/bin:$PATH
+export PATH=$PATH:~/.composer/vendor/bin
+export PATH=./vendor/bin:$PATH # favour composer project-specific binaries over others
 # export PATH=./bin:$PATH # so we can use bundle --binstubs # DELETE THIS IF NOTHING STUFFS UP
 
 # Uncomment to find MAMP's version of PHP before the system version
@@ -29,4 +30,4 @@ export EDITOR='subl -w'
 
 # for https://github.com/zimbatm/direnv#the-stdlib, so we don't have to prefix
 # all commands with bin when using spring - https://github.com/rails/spring
-eval "$(direnv hook $0)"
+eval "$(direnv hook $SHELL)"

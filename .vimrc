@@ -1,4 +1,7 @@
 
+" map comma to leader
+let mapleader = ","
+
 " THIS IS ALL FROM NEOBUNDLE INSTALL PAGE: https://github.com/Shougo/neobundle.vim
 " Note: Skip initialization for vim-tiny or vim-small.
 if !1 | finish | endif
@@ -27,13 +30,14 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'jpo/vim-railscasts-theme'
-NeoBundle 'bling/vim-airline'
-NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'bling/vim-airline' " coloured bar at bottom showing mode, file, line, etc
+NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'tomtom/tcomment_vim'
 NeoBundle 'bitc/vim-bad-whitespace'
 NeoBundle 'ervandew/supertab'
-NeoBundle 'tpope/vim-endwise'
+NeoBundle 'tpope/vim-endwise' " add end tags to ruby def's and stuff
 NeoBundle 'terryma/vim-multiple-cursors'
+NeoBundle 'Yggdroot/indentLine'
 " Language
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'haml.zip'
@@ -64,7 +68,7 @@ NeoBundleCheck
 
 " MY OWN STUFF
 
-set number
+set number " show line numbers
 syntax on
 colorscheme railscasts
 
@@ -114,12 +118,21 @@ set smartcase                      " ... unless they contain at least one capita
 set backspace=2                    " because backspace should work properly
 set noshowmode                     " because we use powerline
 
-" copying
-" copy to system clipboard
-vmap <silent><Leader>x :w !pbcopy<CR><CR>
-" paste from system clipboard
-nmap <Leader>pp :set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
-
 " map jj to escape
 imap jj <Esc>
+
+" map space to colon
+noremap <space> :
+
+" remove trailing whitespace on save
+autocmd BufWritePre * %s/\s\+$//e
+
+" Change cursor shape between insert and normal mode in iTerm2.app
+if $TERM_PROGRAM =~ "iTerm"
+  let &t_SI = "\<Esc>]50;CursorShape=1\x7" " Vertical bar in insert mode
+  let &t_EI = "\<Esc>]50;CursorShape=0\x7" " Block in normal mode
+endif
+
+" Vim
+let g:indentLine_color_term = 239
 
