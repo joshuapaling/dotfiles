@@ -73,8 +73,10 @@ syntax on
 colorscheme railscasts
 
 map <Leader>n :NERDTreeToggle<CR>
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
+nnoremap <leader>f :CtrlP<CR>
+nnoremap <leader>r :CtrlPBufTag<CR>
+nnoremap <leader>m :CtrlPMRUFiles<CR>
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
 " Searching --------------------------------------------------------------------
 set hlsearch                                " Highlight searches
@@ -115,7 +117,7 @@ set showcmd                        " Display an incomplete command in the lower 
 set laststatus=2                   " Always show the status line
 set ignorecase                     " searches are case insensitive...
 set smartcase                      " ... unless they contain at least one capital letter
-set backspace=2                    " because backspace should work properly
+set backspace=indent,eol,start     " because backspace should work properly
 set noshowmode                     " because we use powerline
 
 " map jj to escape
@@ -136,3 +138,5 @@ endif
 " Vim
 let g:indentLine_color_term = 239
 
+" Moving round windows
+nmap <Leader>w <C-W><C-W>
