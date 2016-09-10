@@ -15,6 +15,7 @@ export PATH=/usr/local/bin:$PATH
 export PATH=$PATH:~/.composer/vendor/bin
 export PATH=./vendor/bin:$PATH # favour composer project-specific binaries over others
 # export PATH=./bin:$PATH # so we can use bundle --binstubs # DELETE THIS IF NOTHING STUFFS UP
+export PATH=$PATH:./node_modules/.bin # Add node modules bin path
 
 # Uncomment to find MAMP's version of PHP before the system version
 # export PATH=/Applications/MAMP/bin/php/php5.6.10/bin:$PATH
