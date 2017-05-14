@@ -19,3 +19,6 @@ alias dockerc="docker-compose"
 alias dockerm="docker-machine"
 alias dockerr="docker-compose down && docker-compose up -d && docker-compose ps && docker-compose logs -f"
 alias dockercb="docker-compose build --no-cache"
+
+# Git tower - walk up folder heirarchy to first git repo and open it in tower:
+gt='gittower `git rev-parse --show-toplevel`'
