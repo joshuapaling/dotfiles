@@ -29,3 +29,5 @@ joss_wip_notes.txt
 joss_wip_notes.md
 # so I have a folder to chuck stuff in
 000_git_ignored/*
+
+yarn-error.log

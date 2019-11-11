@@ -31,10 +31,10 @@ export PGHOST=localhost
 # This is needed because: http://stackoverflow.com/questions/33148753/ansible-vault-doesnt-save-changes-with-sublime-text
 export EDITOR='subl -w'
 
-# for https://github.com/zimbatm/direnv#the-stdlib, so we don't have to prefix
-# all commands with bin when using spring - https://github.com/rails/spring
-eval "$(direnv hook $SHELL)"
-
 # To prevent being asked for SSH Key password EVERY time anything wants to use it, after I upgraded to OSX Sierra
 # see http://superuser.com/questions/1127067/macos-keeps-asking-my-ssh-passphrase-since-i-updated-to-sierra/1127520?noredirect=1#comment1615727_1127520
 ssh-add -K ~/.ssh/id_rsa
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
