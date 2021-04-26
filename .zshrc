@@ -88,7 +88,6 @@ source $HOME/.aliases
 
 # added after `brew install nvm`
 export NVM_DIR="$HOME/.nvm"
-. "$(brew --prefix nvm)/nvm.sh"
 
 # Auto-switch node version based on nvmrc - see https://medium.com/@kinduff/automatic-version-switch-for-nvm-ff9e00ae67f3
 # place this after nvm initialization!
