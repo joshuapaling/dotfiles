@@ -19,6 +19,8 @@ export PATH=$PATH:./node_modules/.bin # Add node modules bin path
 export PATH="/usr/local/sbin:$PATH" # Recommendation from homebrew: homebrew's sbin was not found in your PATH but you have installed formulae that put executables in /usr/local/sbin.
 export PATH="$PATH:`yarn global bin`" # Recommendation from yarn: https://yarnpkg.com/en/docs/install
 
+export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin" # for postgres command line tools like psql, createdb, etc
+
 # Uncomment to find MAMP's version of PHP before the system version
 # export PATH=/Applications/MAMP/bin/php/php5.6.10/bin:$PATH
 # export PATH=/Applications/MAMP/bin/php/php5.4.42/bin:$PATH
