@@ -24,8 +24,6 @@ export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin" # fo
 # export PATH=/Applications/MAMP/bin/php/php5.6.10/bin:$PATH
 # export PATH=/Applications/MAMP/bin/php/php5.4.42/bin:$PATH
 
-eval "$(rbenv init -)" # required for rbenv - https://github.com/sstephenson/rbenv#homebrew-on-mac-os-x
-
 export PGHOST=localhost
 
 # Specifying -w will cause the subl command to not exit until the file is closed. - https://www.sublimetext.com/docs/2/osx_command_line.html
