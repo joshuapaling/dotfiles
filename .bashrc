@@ -34,6 +34,8 @@ export EDITOR='subl -w'
 # see http://superuser.com/questions/1127067/macos-keeps-asking-my-ssh-passphrase-since-i-updated-to-sierra/1127520?noredirect=1#comment1615727_1127520
 ssh-add -K ~/.ssh/id_rsa
 
+source $HOME/.secrets
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
