@@ -25,6 +25,7 @@ export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin" # fo
 # export PATH=/Applications/MAMP/bin/php/php5.4.42/bin:$PATH
 
 export PGHOST=localhost
+export PGUSER=postgres
 
 # Specifying -w will cause the subl command to not exit until the file is closed. - https://www.sublimetext.com/docs/2/osx_command_line.html
 # This is needed because: http://stackoverflow.com/questions/33148753/ansible-vault-doesnt-save-changes-with-sublime-text

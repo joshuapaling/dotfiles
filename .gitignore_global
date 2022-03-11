@@ -24,6 +24,10 @@ config.codekit
 #########################
 .idea/*
 
+# VS Code #
+#########################
+*.code-workspace
+
 .byebug_history
 joss_wip_notes.txt
 joss_wip_notes.md

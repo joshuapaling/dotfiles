@@ -1,0 +1,7 @@
+# taken from https://typicode.github.io/husky/#/?id=command-not-found
+# to solve Git Tower failing to run husky commands and therefore
+# not being able to commit
+
+# This loads nvm.sh and sets the correct PATH before running hook
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
