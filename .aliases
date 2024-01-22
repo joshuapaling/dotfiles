@@ -1,17 +1,10 @@
 # Joss' personal alias's
-alias htdocs='cd /Applications/MAMP/htdocs/'
-alias bashrc='subl ~/.bashrc'
+alias bashrc='code ~/.bashrc'
 alias dev='cd ~/dev'
 alias lux='cd ~/dev/luxgroup/'
-alias blog='cd ~/dev/joshuapaling_blog_2015 && subl joshuapaling_blog_2015.sublime-project'
-alias mphp56='/Applications/MAMP/bin/php/php5.6.2/bin/php'
-alias mphp55='/Applications/MAMP/bin/php/php5.5.10/bin/php'
-alias mphp54='/Applications/MAMP/bin/php/php5.4.26/bin/php'
-alias be='bundle exec'
-alias bi='bundle install --binstubs'
-alias dotfiles='subl ~/dev/dotfiles/'
+alias blog='cd ~/dev/joshuapaling_blog_2015 && code .'
+alias dotfiles='code ~/dev/dotfiles/'
 alias j='$(fc -ln -1)' # re-run the last command (eg last test suite)
-alias rpsec='rspec' # I always make that typo!
 
 # Docker shortcuts
 alias dockerc="docker-compose"

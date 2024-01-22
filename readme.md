@@ -2,10 +2,10 @@ Inspired by https://dotfiles.github.io/ and https://medium.com/@webprolific/gett
 
 All these files are symlinked, eg:
 
-ln -s /Users/joshuapaling/dev/personal_projects/dotfiles/.prompt ~/.prompt
-ln -s /Users/joshuapaling/dev/personal_projects/dotfiles/.aliases ~/.aliases
-ln -s /Users/joshuapaling/dev/personal_projects/dotfiles/.rspec ~/.rspec
-ln -s /Users/joshuapaling/dev/personal_projects/dotfiles/.zshrc ~/.zshrc
+ln -s /Users/joshuapaling/dev/dotfiles/.prompt ~/.prompt
+ln -s /Users/joshuapaling/dev/dotfiles/.aliases ~/.aliases
+ln -s /Users/joshuapaling/dev/dotfiles/.rspec ~/.rspec
+ln -s /Users/joshuapaling/dev/dotfiles/.zshrc ~/.zshrc
 
 ToDo:
 - Write an install script that does the symlinking automatically

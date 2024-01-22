@@ -102,4 +102,12 @@ load-nvmrc() {
 }
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="/Library/Frameworks/Python.framework/Versions/3.10/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/joshuapaling/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/joshuapaling/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/joshuapaling/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/joshuapaling/google-cloud-sdk/completion.zsh.inc'; fi
+
+eval "$(rbenv init - zsh)"

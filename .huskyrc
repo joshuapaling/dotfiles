@@ -2,6 +2,9 @@
 # to solve Git Tower failing to run husky commands and therefore
 # not being able to commit
 
+# When running admin portal this is needed to load the NPM_TOKEN for some reason
+source $HOME/.secrets
+
 # This loads nvm.sh and sets the correct PATH before running hook
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
